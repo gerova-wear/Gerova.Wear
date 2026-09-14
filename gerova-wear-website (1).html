@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GEROVA WEAR — premium fashion. Wear Your Identity.">
+  <title>GEROVA WEAR | Wear Your Identity</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .gold{color:#d9a62e}
+    nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:18px 7%;background:rgba(8,8,8,.92);backdrop-filter:blur(10px);border-bottom:1px solid #222}
+    .logo{font-size:1.45rem;font-weight:900;letter-spacing:4px}
+    .logo span{color:#d9a62e}
+    nav ul{display:flex;gap:28px;list-style:none;font-size:.9rem}
+    nav li a:hover{color:#d9a62e}
+    .hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 7% 70px;background:radial-gradient(circle at 50% 35%,#30240f 0,#080808 48%)}
+    .badge{width:110px;height:110px;border:2px solid #d9a62e;border-radius:50%;display:grid;place-items:center;margin:0 auto 28px;color:#d9a62e;font-size:3rem;font-weight:900}
+    .hero h1{font-size:clamp(3rem,10vw,7rem);letter-spacing:10px;line-height:1}
+    .hero h1 span{color:#d9a62e}
+    .hero p{margin:24px auto 34px;color:#bbb;font-size:1.1rem;max-width:600px}
+    .btn{display:inline-block;padding:14px 28px;border:1px solid #d9a62e;color:#080808;background:#d9a62e;font-weight:800;margin:5px;transition:.25s}
+    .btn:hover{background:#fff;border-color:#fff}
+    .btn.outline{background:transparent;color:#fff}
+    section{padding:90px 7%}
+    .section-title{text-align:center;margin-bottom:45px}
+    .section-title h2{font-size:2.4rem}
+    .section-title p{color:#999;margin-top:8px}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#111;border:1px solid #242424;overflow:hidden}
+    .product-img{height:300px;display:grid;place-items:center;background:linear-gradient(145deg,#181818,#30240f)}
+    .shirt{width:150px;height:180px;background:#111;border:2px solid #d9a62e;clip-path:polygon(25% 0,40% 12%,60% 12%,75% 0,100% 20%,82% 43%,72% 31%,72% 100%,28% 100%,28% 31%,18% 43%,0 20%)}
+    .card-body{padding:20px}
+    .card-body h3{margin-bottom:7px}
+    .price{color:#d9a62e;font-weight:800;margin:10px 0 16px}
+    .small-btn{display:inline-block;border:1px solid #555;padding:9px 15px;font-size:.85rem}
+    .about{background:#0d0d0d;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+    .about-box{border:1px solid #333;padding:35px;background:#111}
+    .about h2{font-size:2.5rem;margin-bottom:18px}
+    .about p{color:#aaa}
+    .contact{text-align:center}
+    .contact-box{max-width:700px;margin:auto;border:1px solid #333;padding:35px;background:#111}
+    .contact-box p{color:#aaa;margin:10px 0 22px}
+    footer{text-align:center;padding:30px 7%;border-top:1px solid #222;color:#777;font-size:.85rem}
+    @media(max-width:800px){
+      nav ul{display:none}
+      .products,.about{grid-template-columns:1fr}
+      .product-img{height:250px}
+      .hero h1{letter-spacing:5px}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo">GEROVA <span>WEAR</span></a>
+    <ul>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <div class="badge">G</div>
+      <h1>GEROVA <span>WEAR</span></h1>
+      <p>Premium fashion made for people who are not afraid to stand out.</p>
+      <a class="btn" href="#shop">SHOP THE COLLECTION</a>
+      <a class="btn outline" href="#about">OUR STORY</a>
+    </div>
+  </header>
+
+  <section id="shop">
+    <div class="section-title">
+      <h2>Featured Collection</h2>
+      <p>Clean. Bold. Original.</p>
+    </div>
+    <div class="products">
+      <article class="card">
+        <div class="product-img"><div class="shirt"></div></div>
+        <div class="card-body">
+          <h3>Gerova Signature Tee</h3>
+          <p>Premium everyday T-shirt with the signature Gerova identity.</p>
+          <div class="price">GH₵ 150</div>
+          <a class="small-btn" href="#contact">Order Now</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="product-img"><div class="shirt"></div></div>
+        <div class="card-body">
+          <h3>Gerova Street Hoodie</h3>
+          <p>A heavyweight hoodie designed for comfort and confidence.</p>
+          <div class="price">GH₵ 280</div>
+          <a class="small-btn" href="#contact">Order Now</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="product-img"><div class="shirt"></div></div>
+        <div class="card-body">
+          <h3>Gerova Classic Cap</h3>
+          <p>A simple statement piece to complete your everyday look.</p>
+          <div class="price">GH₵ 100</div>
+          <a class="small-btn" href="#contact">Order Now</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div>
+      <h2>Wear Your <span class="gold">Identity.</span></h2>
+      <p>GEROVA WEAR is a fashion brand built around confidence, originality and modern African style. Our goal is simple: create clothes that make you feel like yourself.</p>
+    </div>
+    <div class="about-box">
+      <h3 class="gold">GEROVA WEAR</h3>
+      <p>Premium • Bold • Original</p>
+      <br>
+      <p>Designed with the next generation in mind.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="section-title">
+      <h2>Get Your GEROVA</h2>
+      <p>Ready to place an order or work with us?</p>
+    </div>
+    <div class="contact-box">
+      <p>Replace the details below with your real business contact information before publishing.</p>
+      <a class="btn" href="https://wa.me/233000000000" target="_blank">ORDER ON WHATSAPP</a>
+      <a class="btn outline" href="mailto:hello@gerovawear.com">EMAIL US</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 GEROVA WEAR. All rights reserved. · Wear Your Identity.
+  </footer>
+</body>
+</html>
